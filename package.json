@@ -1,0 +1,22 @@
+{
+  "name": "artist-portfolio",
+  "version": "1.0.0",
+  "description": "A personal artist portfolio website supporting English and 中文.",
+  "main": "src/index-en.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process can be defined here.'"
+  },
+  "keywords": [
+    "artist",
+    "portfolio",
+    "website",
+    "bilingual"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
