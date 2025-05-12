@@ -1,4 +1,5 @@
 # Artist Portfolio Website
+*all the info below are not updated*
 
 ## Overview
 This project is a personal artist portfolio website that showcases the artist's work, biography, CV, and contact information. The website supports both English and 中文, allowing users to switch between languages seamlessly.
