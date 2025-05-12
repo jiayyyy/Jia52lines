@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <div class="lang-switch">
+            <a href="index-en.html" id="lang-en">EN</a>
+            <a href="index-zh.html" id="lang-zh">中文</a>
+        </div>
+        <div class="menu">
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Projects</a>
+                <div class="dropdown-content">
+                    <a href="pages/projects/index-en-p1.html">Project 1</a>
+                    <a href="pages/projects/index-en-p1.htm2">Project 2</a>
+                    <a href="pages/projects/index-en-p1.htm3">Project 3</a>
+                </div>
+            </div>
+            <a href="pages/about/index-en.html">About</a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Jiajia Wu<span>52lines Studio</span></h1>
+        <p><img src="assets/images/letter_cut_greenhouse .png" id="moving-image" alt="Moving Image"></p>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer">
+        <!-- Include the footer component -->
+        <!-- This will be replaced with the content of src/components/footer.html -->
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+
+    
+ <style>
+        /* Dropdown menu styles */
+        #navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+
+        #navbar .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(249, 249, 249, 0.5);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 10000; /* Ensure dropdown content is on top of everything */
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+        
+        /*main content styles*/
+        @font-face {
+         font-family: "WHOA Spine Minimum";
+        src: url("https://assets.codepen.io/174183/WHOA-Variable-Spine-v0.3.ttf")
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: "WHOA Top Minimum";
+        src: url("https://assets.codepen.io/174183/WHOA-Variable-Top-v0.3.ttf")
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        body {
+        font-family: sans-serif;
+        max-width: 50rem;
+        padding: 3rem 0;
+        margin: 0 auto;
+        color: #141414;
+        background: #80c8fd;
+        display: grid;
+        place-items: center;
+        }
+
+        h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        }
+
+        h1 span {
+        display: block;
+        cursor: url("https://assets.codepen.io/174183/spiral_1.png"), auto;
+        font-family: "WHOA Top Minimum";
+        font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+        font-weight: normal;
+        font-size: clamp(10rem, 106.7vw - 36.7rem, 20rem);
+        position: relative;
+        line-height: 0.5;
+        margin: 0 0 0 1rem;
+        }
+
+        h1 span::before {
+        content: "52lines Studio";
+        font-family: "WHOA Spine Minimum";
+        font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+        font-size: 1em;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 0;
+        }
+
+        h1 span:hover,
+        h1 span:hover::before {
+        font-variation-settings: "hrzn" 820, "vert" -1000, "rota" 59, "zoom" 820;
+        transition: all 1000ms cubic-bezier(0.42, 0, 0.11, 1.43);
+        }
+
+        h1 span:hover {
+        -webkit-text-stroke: 1px white;
+        }
+
+        p {
+        max-width: 60ch;
+        }
+
+        #moving-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px; /* Adjust the size of the image */
+    animation: move-horizontal 30s linear infinite;
+}
+
+@keyframes move-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+            </style>
+        </body>

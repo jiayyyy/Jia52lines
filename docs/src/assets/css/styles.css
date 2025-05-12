@@ -1,29 +1,14 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'times', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 0 0px;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 20px;
-}
-
-nav a:hover {
-    background: #555;
 }
 
 .container {
@@ -50,10 +35,10 @@ footer {
 
 .language-switcher button {
     margin: 0 10px;
-    padding: 10px 15px;
+    padding: 10px 25px;
     border: none;
     background: #333;
-    color: #fff;
+    color: #1b6e9e;
     cursor: pointer;
 }
 
@@ -96,3 +81,5 @@ footer {
   .lang-switch a:hover {
     background-color: #f0f0f0;
   }
+
+  
