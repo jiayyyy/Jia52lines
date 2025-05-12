@@ -82,4 +82,12 @@ footer {
     background-color: #f0f0f0;
   }
 
+  /* Footer styles */
+  #footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vw 0;
+    position: bottom;
+    z-index: 10;
+}
   
