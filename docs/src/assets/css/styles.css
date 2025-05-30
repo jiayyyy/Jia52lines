@@ -93,8 +93,25 @@ footer {
     z-index: 10;
 }
 
+/*image styles*/
+        #moving-image1 {
+            position: fixed;
+            bottom: 30px;
+            left: 0;
+            width: 20%; 
+            animation: move-horizontal 30s linear infinite;
+        }
+        @keyframes move-horizontal {
+            0% {
+                transform: translateX(-20vw);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+
 /*sidebar styles*/
-#sidebar {
+    #sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -125,8 +142,8 @@ footer {
     font-size: 25px; 
     }
 
-    #sidebar a::after,
-    #sidebar a::before {
+    #sidebar a:not(.inactive)::after,
+    #sidebar a:not(.inactive)::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -139,17 +156,78 @@ footer {
     transition: transform 0.4s ease-out;
     }
 
-    #sidebar a::before {
+    #sidebar a:not(.inactive)::before {
     top: -5px;
     transform-origin: left;
     }
 
-    #sidebar a:hover::after,
-    #sidebar a:hover::before {
+    #sidebar a:hover:not(.inactive)::after,
+    #sidebar a:hover:not(.inactive)::before {
     transform: scaleX(1);
     }
 
-    #sidebar a:hover {
+    #sidebar a:hover:not(.inactive) {
     transform: scale(1.2);
     color: #ffffff;
     }
+
+    #sidebar a.inactive {
+    pointer-events: none;
+    cursor: default;
+    color: rgb(0, 0, 0);
+    }
+
+
+/* Submenu styles */
+#sidebar li.projects-item {
+    position: relative;
+}
+
+#sidebar .submenu {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    background-color: rgba(55, 133, 221, 0.5); /* 50% transparent white */
+    padding: 10px 0;
+    width: 180px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1002;
+}
+
+#sidebar .submenu li {
+    margin: 0;
+}
+
+#sidebar .submenu a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    background: transparent;
+    transition: none;
+}
+
+#sidebar .submenu a:hover {
+    color: #000;
+    transform: none;
+    background: none;
+}
+
+#sidebar li.projects-item:hover .submenu {
+    display: block;
+    animation: slide-out 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

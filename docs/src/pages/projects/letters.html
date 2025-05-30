@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letters Jiajia</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li> 
+          <li><a href="src/pages/about/index-ab-en.html">About</a></li>  
+          <li class="projects-item">
+            <a href="src/pages/projects/index-pg-en.html">Projects</a>
+            <ul class="submenu">
+              <li><a href="src/pages/projects/letters.html">Letters (2024)</a></li>
+              <li><a href="src/pages/projects/facial-mobile-camera-record.html">Facial Mobile Camera Record (2023)</a></li>
+              <li><a href="src/pages/projects/memoir-of-12years-old.html">The Memoir of @12years old (2022)</a></li>
+              <li><a href="src/pages/projects/commuters.html">Commuters (2021)</a></li>
+              <li><a href="src/pages/projects/untitled.html">Untitled (2021)</a></li>
+              <li><a href="src/pages/projects/packages-that-wash-up.html">Packages That Wash Up On The Islands (2020)</a></li>
+              <li><a href="src/pages/projects/mother.html">Mother, (2019)</a></li>
+            </ul>
+          </li>
+          <li><a href="src/pages/cv/index-cv-en.html">CV</a></li>
+          <li><a href="src/pages/contact/index-con-en.html">Contact</a></li>
+        </ul>
+      </nav>
+    <main>
+        <h1>《Letters》2024</h1>
+        <section class="sliding-gallery">
+            <div class="gallery-container">
+                <img src="../../assets/images/書信1.jpeg" alt="Gallery Image 1">
+                <img src="../../assets/images/gallery2.jpg" alt="Gallery Image 2">
+                <img src="../../assets/images/gallery3.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section class="project-list">
+            <article class="project-item">
+                
+                <p>In today’s age of advanced digital communication, letters are rarely used for everyday 
+                    interaction. Most physical mail now exists in the form of formal documents or official 
+                    notices. As a tangible medium, a letter must be physically delivered to the recipient’s 
+                    location to be read, making the transmission slower and more prone to loss compared to 
+                    digital messages. However, when words and thoughts are transformed into a physical 
+                    letter, the result is a communication medium that carries a deeper sense of intimacy 
+                    and emotional connection.<p>
+
+                    </p>The work Letter involves overlapping papercuts on postcards to form fragmented written 
+                    messages. Each piece contains separate, broken text. The cut-outs and negative space 
+                    created by the papercuts divide radicals and letters, and the recipient must physically 
+                    align the two layers to fully read the message. In this piece, I experiment with 
+                    deconstructing language from its function as a vessel of meaning, turning words into 
+                    something like eraser shavings—fragments that aren’t simply erased but compressed, 
+                    crumpled, and left as residue. The desire to express becomes a process of reflection 
+                    before writing, with the imagined presence of the recipient guiding the message—someone 
+                    with whom I share a bond from the past, now addressed in the present with wishes for 
+                    the future.</p>
+                    
+                </p>Recipients include long-lost friends, deceased family members, and overseas 
+                    acquaintances. This project will continue as a long-term practice. I firmly believe 
+                    that the difference between handwritten letters and digital text goes beyond speed 
+                    and convenience. The few grams of weight in a letter can serve as a substitute for 
+                    the physical body that cannot be present beside the person on the other end.</p>
+            </article>
+    </main> 
+
+
+   
+
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 50rem;
+            padding: 3rem 0;
+            margin: 0 auto;
+            color: #141414;
+            background: #3fa1e7;
+            display: grid;
+            place-items: center;
+            }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #141414;
+            }
+        
+        #p {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;  
+        }
+
+        /* Sliding Gallery Styles */
+        .sliding-gallery {
+            width: 100%;
+            overflow: hidden; /* Hide images outside the container */
+            position: relative;
+            height: 300px; /* Adjust height as needed */
+        }
+
+        .gallery-container {
+            display: flex;
+            width: 300%; /* 3 images, so 300% width */
+            animation: slide 6s infinite; /* 6 seconds for 3 images (2 seconds per image) */
+        }
+
+        .gallery-container img {
+            width: 100%; /* Each image takes up the full width of the container */
+            height: 100%;
+            object-fit: cover; /* Ensure images fit nicely */
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            33% {
+                transform: translateX(-100%);
+            }
+            66% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</body>
+</html>
